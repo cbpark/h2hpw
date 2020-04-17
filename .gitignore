@@ -11,4 +11,7 @@ stack.yaml.lock
 *.dat
 *.old
 *.cmnd
+*.gz
+*.lhe
+*.log
 bin
