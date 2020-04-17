@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 8b993884cfe950104ac90e991b948e45cb0726257e45af571ffc555764933eca
+
+name:           h2hpw
+version:        0.0.0.0
+synopsis:       Collider studies on the heavy Higgs boson in the 2HDM
+category:       Physics
+homepage:       https://github.com/cbpark/h2hpw#readme
+bug-reports:    https://github.com/cbpark/h2hpw/issues
+author:         Chan Beom Park
+maintainer:     cbpark@gmail.com
+license:        GPL-3
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/cbpark/h2hpw
+
+executable h2hpw
+  main-is: h2hpw.hs
+  other-modules:
+      Paths_h2hpw
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -O2 -funbox-strict-fields
+  build-depends:
+      base >=4.12.0.0 && <5
+  default-language: Haskell2010
