@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8b993884cfe950104ac90e991b948e45cb0726257e45af571ffc555764933eca
+-- hash: 196f1c22703cf39390b4612be26d25a214589fffce2fdc4a9d8bf94b32d7ab73
 
 name:           h2hpw
 version:        0.0.0.0
@@ -31,4 +31,9 @@ executable h2hpw
   ghc-options: -Wall -Wcompat -O2 -funbox-strict-fields
   build-depends:
       base >=4.12.0.0 && <5
+    , bytestring
+    , hep-utilities
+    , pipes
+    , pipes-bytestring
+    , zlib
   default-language: Haskell2010
